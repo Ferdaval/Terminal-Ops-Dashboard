@@ -50,21 +50,22 @@ A high-performance Terminal User Interface (TUI) dashboard built with Go and Bub
 (Alternatively, run directly without building: go run ./cmd/dashboard/main.go)🎮 
 ##Controls
 Key           Action
-- 1, 2, 3 -> Switch to System, Docker, or GitHub views
-- Tab / Shift+Tab ->Cycle through views
-- j / k or ↓ / ↑ -> Navigate lists (Vim-style)
-- q or Ctrl+C -> Quit application
-Docker Specific:
+- 1, 2, 3   ->   Switch to System, Docker, or GitHub views
+- Tab / Shift+Tab  ->  Cycle through views
+- j / k or ↓ / ↑   ->   Navigate lists (Vim-style)
+- q or Ctrl+C   ->   Quit application
+
+#### Docker Specific:
 - s: Start/Stop selected container
 - r: Restart selected container
 - l: View container logs
-GitHub Specific:
+#### GitHub Specific:
 - m: Mark notification as read
 - o: Open notification in default web browser
 - f: Filter notifications by repository (fuzzy search)
 - Esc: Cancel filter mode
 
-##📁 Project Structure
+### 📁 Project Structure
 
 ├── cmd/
 │   └── dashboard/         # Application entry point
@@ -78,12 +79,13 @@ GitHub Specific:
 ├── bin/                  # Build output
 ├── go.mod                # Dependency manifest
 └── README.md
-##📦 Dependencies
+
+### 📦 Dependencies
 - Bubbletea - TUI framework
 - Lipgloss - Terminal styling
 - gopsutil - System metrics
 - Docker SDK for Go - Docker API integration
 - go-github - GitHub API integration
 - OAuth2 - Authentication
-##📄 License
+### 📄 License
 This project is open-source and available under the MIT License.
